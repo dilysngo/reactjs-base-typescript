@@ -13,11 +13,11 @@
   "insertPragma": false,
   "jsxSingleQuote": true,
   "tsxSingleQuote": true,
-  "printWidth": 80,
+  "printWidth": 130,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,
-  "semi": true,
+  "semi": false,
   "tabWidth": 2,
   "trailingComma": "es5"
 }
