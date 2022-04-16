@@ -22,6 +22,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
+    "start:dev": "env-cmd -f .env.development react-scripts start",
+    "start:prod": "env-cmd -f .env.production react-scripts start",
+    "start:testnet": "env-cmd -f .env.testnet react-scripts start",
+    "build:dev": "env-cmd -f .env.development react-scripts build",
+    "build:prod": "env-cmd -f .env.production react-scripts build",
+    "build:testnet": "env-cmd -f .env.testnet react-scripts build",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -47,6 +53,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^8.13.0",
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-react": "^7.29.4",
