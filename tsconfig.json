@@ -23,7 +23,7 @@
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "downlevelIteration": true,
-    "types": ["react-spring", "jest"]
+    "types": ["jest"]
   },
   "exclude": ["node_modules"],
   "include": ["src"]
