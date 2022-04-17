@@ -1,6 +1,7 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { save, load } from 'redux-localstorage-simple'
 import { getThemeCache } from '../utils/theme'
+import { updateVersion } from './global/actions'
 import user from './user/reducer'
 
 type MergedState = {
@@ -25,7 +26,7 @@ const store = configureStore({
   preloadedState: loadedState as any,
 })
 
-// store.dispatch(updateVersion())
+store.dispatch(updateVersion())
 
 export default store
 
