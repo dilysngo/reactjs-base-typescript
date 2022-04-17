@@ -1,4 +1,10 @@
 {
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
   "settings": {
     "react": {
       "version": "detect"
@@ -8,11 +14,6 @@
         "paths": ["./src"]
       }
     }
-  },
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
   },
   "extends": [
     "eslint:recommended",
