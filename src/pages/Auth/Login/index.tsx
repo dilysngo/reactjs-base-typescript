@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useTranslation } from 'translations'
 
 const HomeContainer = styled.div`
   font-size: 30px;
@@ -14,9 +13,8 @@ const HomeContainer = styled.div`
   justify-content: center;
 `
 
-const Home = () => {
-  const { t } = useTranslation()
-  return <HomeContainer>{t('Home')}</HomeContainer>
+const Login = () => {
+  return <HomeContainer>Login</HomeContainer>
 }
 
-export default Home
+export default Login

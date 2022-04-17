@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { createWeb3ReactRoot, Web3ReactProvider } from '@web3-react/core'
 import { Provider } from 'react-redux'
+import { LanguageProvider } from 'translations'
 import { NetworkContextName } from './constants'
 import store from './state'
 import getLibrary from './utils/getLibrary'
@@ -13,7 +14,9 @@ const Providers: React.FC<{ children: ReactNode }> = ({ children }) => {
     <Web3ReactProvider getLibrary={getLibrary}>
       <Web3ProviderNetwork getLibrary={getLibrary}>
         <Provider store={store}>
-          <ThemeContextProvider>{children}</ThemeContextProvider>
+          <ThemeContextProvider>
+            <LanguageProvider>{children}</LanguageProvider>
+          </ThemeContextProvider>
         </Provider>
       </Web3ProviderNetwork>
     </Web3ReactProvider>
